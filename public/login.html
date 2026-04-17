@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>MATRIX | 登录</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <main class="login-shell">
+        <section class="login-panel">
+            <div class="brand">MATRIX</div>
+            <h1>账号枢纽登录</h1>
+            <p>请输入网页登录账号，进入 Steam Hub。</p>
+
+            <form id="login-form">
+                <label for="username">用户名</label>
+                <input id="username" name="username" autocomplete="username" required>
+
+                <label for="password">密码</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+                <button type="submit">登录</button>
+                <div id="login-message" class="login-message"></div>
+            </form>
+        </section>
+    </main>
+    <script src="/js/login.js"></script>
+</body>
+</html>
