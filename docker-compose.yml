@@ -1,0 +1,13 @@
+services:
+  steam-hub:
+    build: .
+    container_name: steam-matrix-hub
+    ports:
+      - "8888:3000" # 继续使用你选定的 8888 端口
+    volumes:
+      # ./ 代表当前目录，即 /root/steam-hub/
+      - ./data/accounts.json:/app/data/accounts.json
+      - ./data/raw.txt:/app/data/raw.txt
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
